@@ -49,7 +49,7 @@ const Projects = () => {
               <div className="card" style={{ border: "0" }}>
                 <Carousel controls={false} indicators={false}>
                   <Carousel.Item>
-                    <Link to="/1" className={classes["custom-link"]}>
+                    <Link to="/portfolio/1" className={classes["custom-link"]}>
                       <Col>
                         <div className="text-center border-0">
                           <Card

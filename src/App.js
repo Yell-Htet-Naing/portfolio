@@ -8,7 +8,7 @@ import HashLoader from "react-spinners/HashLoader";
 import classes from './components/All.module.css'
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/portfolio",
     element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: "/1",
+        path: "/portfolio/1",
         element: <ProjectDetail />,
       },
     ],
