@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.415be61b.css",
-    "main.js": "/portfolio/static/js/main.f2909374.js",
+    "main.js": "/portfolio/static/js/main.a101ef36.js",
     "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/code1.png": "/portfolio/static/media/code1.5379bdc122a7e541338d.png",
     "static/media/code.jpg": "/portfolio/static/media/code.9d7789c39f2a8a7f878c.jpg",
@@ -9,11 +9,11 @@
     "static/media/Yell-Htet-Naing.pdf": "/portfolio/static/media/Yell-Htet-Naing.199f2ef1ad2d1aa72998.pdf",
     "index.html": "/portfolio/index.html",
     "main.415be61b.css.map": "/portfolio/static/css/main.415be61b.css.map",
-    "main.f2909374.js.map": "/portfolio/static/js/main.f2909374.js.map",
+    "main.a101ef36.js.map": "/portfolio/static/js/main.a101ef36.js.map",
     "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.415be61b.css",
-    "static/js/main.f2909374.js"
+    "static/js/main.a101ef36.js"
   ]
 }
