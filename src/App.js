@@ -1,25 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import HomePage from "./pages/Home";
+import ProjectDetail from "./pages/ProjectDetail";
+import RootLayout from "./pages/Root";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import ErrorPage from "./pages/Error";
+import HashLoader from "react-spinners/HashLoader";
+import classes from './components/All.module.css'
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <RootLayout />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        index: true,
+        element: <HomePage />,
+      },
+      {
+        path: "/1",
+        element: <ProjectDetail />,
+      },
+    ],
+  },
+]);
 
-function App() {
+
+
+const App = () => {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    },3000);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {
+        loading ?
+        <HashLoader
+          style={{height : "100vh"}}
+          className={classes["loading-position"]}
+          color={"red"}
+          loading={loading}
+          size={50}
+        
+      />
+        :
+        <RouterProvider router={router} />
+      }
+     
     </div>
   );
-}
+};
 
 export default App;
